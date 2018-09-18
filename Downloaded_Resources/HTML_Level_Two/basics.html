@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>html_part_2</title>
+  </head>
+  <body>
+
+<h3>Tables</h3>
+
+<table border = "1">
+  <!-- Can adjust the border width above -->
+  <thead>
+    <th>Number</th>
+    <th>Colour</th>
+    <th>Country</th>
+  </thead>
+  <tr>
+    <td>250</td>
+    <td>Red</td>
+    <td>USA</td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <!-- you can still add incomplete rows !! but
+  it is not recommended -->
+  </tr>
+</table>
+<!-- you can add an image as well as texts or numbers as td elements as well -->
+
+
+
+
+<!--  You can specify the input type-->
+<!--  Reference Links-->
+<!-- http://www.w3schools.com/TAGs/att_input_type.asp -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+
+<!--Actions: where we send the data -->
+<!--Method: get/post HTTP method -->
+
+<h3>Forms</h3>
+
+
+<form>
+  <h4>Log In</h4>
+
+  <h5>Please input your email and password</h5>
+
+  <input type="email" name="user_email" value="prefilled@emial">
+  <input type="password" name="user_password" value="password_please">
+  <input type="submit" name="" value="Submit - Click Me">
+<!-- value adds a default input -->
+
+<h5>Choose color</h5>
+<input type="color" name="" value="">
+<!-- Actually brings up a colour picker !! -->
+
+
+
+</form action="https://www.facebook.com" method="get">
+<p>enter text and take me to fb for facebook</p>
+<input type="email" name="user_email2" value="email@gmail">
+<input type="submit" name="" value="Submit">
+
+<!-- When submit is hit it adds the name that has been provided -->
+<!-- as a tag onto the url e.g. user_email2=dirac.dc@gmail.com -->
+
+<!-- Due to the action the submit button will now store the parameter  -->
+<!-- and also take the user to fb -->
+
+<form >
+
+
+<form >
+  <label>
+    Enter Text:
+    <input type="text" name="" value="">
+  </label>
+  <!-- This produces labels horizontally alongside the input box. -->
+
+<!-- a better way of doing the above is the following: -->
+
+<label for="userinput">Enter Text:</label>
+<input id="userinput" type="text" name="" value="Hello!">
+<!-- The 'for' above refers to the id that you have set -->
+
+<input id="userinput" type="text" name="" placeholder="Enter Text Here">
+<!-- a placeholder is grey text input which disappears as soon as the userinput -->
+<!-- starts typing. It is much more commonly used. -->
+
+<input id="userinput" type="text" name="" placeholder="required" required>
+<!-- The required tag means that when the submit button is pressed an -->
+<!-- error will be raised if no value has been provided. -->
+
+
+<input type="submit" name="" value="Submit">
+
+</form>
+
+
+<h3>Form Selection </h3>
+
+<form method="get">
+  <h4>From inside or outside the US? </h4>
+  <label for="inus">Inside:</label>
+  <input id="inus" type="radio" name="loc" value="">
+  <label for="outusa">Ouside:</label>
+  <input id="outusa" type="radio" name="loc" value="">
+  <!-- By giving them the same name we make them mutually exclusive -->
+  <!-- as radio options. -->
+
+  <h4>How was your service? </h4>
+
+  <select class="" name="stars">
+    <option value="Great">3</option>
+    <option value="Okay">2</option>
+    <option value="Bad">1</option>
+  </select>
+  <!-- This creates a dropdown menu !! -->
+  <!-- The value is the value that will be saved behind the scenes. -->
+  <!-- 3,2 and 1 will be shown to the user -->
+
+
+<h4>Any other feedback?</h4>
+
+<textarea name="mytext" rows="8" cols="80"></textarea>
+<!-- This creates a text box of a specific size. -->
+
+<input type="submit" name="" value="Submit">
+
+</form>
+
+
+
+  </body>
+</html>
