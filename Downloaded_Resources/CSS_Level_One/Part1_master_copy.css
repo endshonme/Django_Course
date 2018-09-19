@@ -1,0 +1,12 @@
+/* This creates a comment in css */
+
+/*
+The typical form of a css statement
+is given as:
+
+selected tag{
+  property: value;
+}
+*/
+
+h1{ }
