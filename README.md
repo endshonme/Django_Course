@@ -1,2 +1,2 @@
 # Django_Course
-Files when working through a Django Course.
+Files for a Django Course.
